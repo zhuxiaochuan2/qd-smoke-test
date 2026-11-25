@@ -1,0 +1,9 @@
+name: macsmoke
+on:
+  workflow_dispatch:
+jobs:
+  m:
+    runs-on: macos-14
+    steps:
+      - run: uname -a
+      - run: xcodebuild -version
